@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace quickstart.Products.Migrations
+namespace RedTeamHotChocolate.Products.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

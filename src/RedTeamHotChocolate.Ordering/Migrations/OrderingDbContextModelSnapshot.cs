@@ -7,7 +7,7 @@ using RedTeamHotChocolate.Ordering.DataLayer;
 
 #nullable disable
 
-namespace quickstart.Ordering.Migrations
+namespace RedTeamHotChocolate.Ordering.Migrations
 {
     [DbContext(typeof(OrderingDbContext))]
     partial class OrderingDbContextModelSnapshot : ModelSnapshot
@@ -21,7 +21,7 @@ namespace quickstart.Ordering.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.LineItemEntity", b =>
+            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.LineItem", b =>
                 {
                     b.Property<int>("Id")
                         .HasColumnType("integer");
@@ -37,7 +37,7 @@ namespace quickstart.Ordering.Migrations
                     b.ToTable("LineItems");
                 });
 
-            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.OrderEntity", b =>
+            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -46,9 +46,11 @@ namespace quickstart.Ordering.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityAlwaysColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -56,16 +58,16 @@ namespace quickstart.Ordering.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.LineItemEntity", b =>
+            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.LineItem", b =>
                 {
-                    b.HasOne("RedTeamHotChocolate.Ordering.DataLayer.OrderEntity", null)
+                    b.HasOne("RedTeamHotChocolate.Ordering.DataLayer.Order", null)
                         .WithMany("Items")
                         .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.OrderEntity", b =>
+            modelBuilder.Entity("RedTeamHotChocolate.Ordering.DataLayer.Order", b =>
                 {
                     b.Navigation("Items");
                 });

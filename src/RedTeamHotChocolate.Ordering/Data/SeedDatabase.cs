@@ -5,7 +5,7 @@ namespace RedTeamHotChocolate.Ordering.Data;
 
 public static class SeedDatabase
 {
-    private static readonly string products = "C:\\Development\\hotchocolate-examples\\fusion\\complete\\RedTeamHotChocolate\\src\\RedTeamHotChocolate.Ordering\\products.json";
+    private static readonly string products = "..\\products.json";
     public static void Seed(OrderingDbContext context)
     {
 
@@ -28,6 +28,10 @@ public static class SeedDatabase
 
                 context.SaveChanges();
             }
+        }
+        else
+        {
+            Console.Write($"{products} not found.");
         }
     }
     public class ProductEntity

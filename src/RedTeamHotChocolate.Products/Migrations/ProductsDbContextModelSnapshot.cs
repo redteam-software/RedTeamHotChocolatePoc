@@ -7,7 +7,7 @@ using RedTeamHotChocolate.Products.DataLayer;
 
 #nullable disable
 
-namespace quickstart.Products.Migrations
+namespace RedTeamHotChocolate.Products.Migrations
 {
     [DbContext(typeof(ProductsDbContext))]
     partial class ProductsDbContextModelSnapshot : ModelSnapshot
@@ -21,7 +21,7 @@ namespace quickstart.Products.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("RedTeamHotChocolate.Products.DataLayer.ProductEntity", b =>
+            modelBuilder.Entity("RedTeamHotChocolate.Products.DataLayer.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
