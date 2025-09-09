@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>RedTeamHotChocolate.Gateway</RootNamespace>
+	<LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ChilliCream.Nitro.App" Version="28.0.14" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.AspNetCore.CommandLine" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.Fusion" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.Fusion.SourceSchema" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.Types.Analyzers" Version="15.1.10" />
+  </ItemGroup>
+
+</Project>

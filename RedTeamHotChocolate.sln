@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{68A62A78-DA80-4FEA-BAE9-1E4DE60867E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedTeamHotChocolate.Ordering", "src\RedTeamHotChocolate.Ordering\RedTeamHotChocolate.Ordering.csproj", "{75100695-7DF2-44C5-9C5E-A0E0C8BE6A7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedTeamHotChocolate.Products", "src\RedTeamHotChocolate.Products\RedTeamHotChocolate.Products.csproj", "{84EC8D70-71F6-43E2-B0C5-FBFB0F5D858A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedTeamHotChocolate.Gateway", "src\RedTeamHotChocolate.Gateway\RedTeamHotChocolate.Gateway.csproj", "{3606D5F4-116D-48F1-8795-EBEE063313F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+		update-schema.ps1 = update-schema.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateway", "gateway", "{072B4940-6D41-4FDB-B61B-874A51C51E49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75100695-7DF2-44C5-9C5E-A0E0C8BE6A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75100695-7DF2-44C5-9C5E-A0E0C8BE6A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75100695-7DF2-44C5-9C5E-A0E0C8BE6A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75100695-7DF2-44C5-9C5E-A0E0C8BE6A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EC8D70-71F6-43E2-B0C5-FBFB0F5D858A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EC8D70-71F6-43E2-B0C5-FBFB0F5D858A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EC8D70-71F6-43E2-B0C5-FBFB0F5D858A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EC8D70-71F6-43E2-B0C5-FBFB0F5D858A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3606D5F4-116D-48F1-8795-EBEE063313F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3606D5F4-116D-48F1-8795-EBEE063313F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3606D5F4-116D-48F1-8795-EBEE063313F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3606D5F4-116D-48F1-8795-EBEE063313F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75100695-7DF2-44C5-9C5E-A0E0C8BE6A7C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{84EC8D70-71F6-43E2-B0C5-FBFB0F5D858A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3606D5F4-116D-48F1-8795-EBEE063313F2} = {072B4940-6D41-4FDB-B61B-874A51C51E49}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {68A62A78-DA80-4FEA-BAE9-1E4DE60867E3}
+		{072B4940-6D41-4FDB-B61B-874A51C51E49} = {68A62A78-DA80-4FEA-BAE9-1E4DE60867E3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D51954C-BC88-43B4-869D-63FAF0D089D6}
+	EndGlobalSection
+EndGlobal

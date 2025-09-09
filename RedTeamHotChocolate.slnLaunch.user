@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "All",
+    "Projects": [
+      {
+        "Path": "src\\RedTeamHotChocolate.Ordering\\RedTeamHotChocolate.Ordering.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\RedTeamHotChocolate.Products\\RedTeamHotChocolate.Products.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\RedTeamHotChocolate.Gateway\\RedTeamHotChocolate.Gateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

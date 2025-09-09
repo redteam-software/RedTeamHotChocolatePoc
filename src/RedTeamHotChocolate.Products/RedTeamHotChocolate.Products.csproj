@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(ImplicitUsings)' == 'enable'">
+    <Using Include="RedTeamHotChocolate.Products" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Bogus" Version="35.6.3" />
+	  <PackageReference Include="HotChocolate.Analyzers" Version="13.9.14" />
+    <PackageReference Include="ChilliCream.Nitro.App" Version="28.0.14" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="15.1.10" />
+	  <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="15.1.10" />
+	  <PackageReference Include="HotChocolate.Data.EntityFramework" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.AspNetCore.CommandLine" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.Fusion" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.Fusion.SourceSchema" Version="15.1.10" />
+    <PackageReference Include="HotChocolate.Types.Analyzers" Version="15.1.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+</Project>

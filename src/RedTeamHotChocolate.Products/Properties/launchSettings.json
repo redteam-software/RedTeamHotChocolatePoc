@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "RedTeamHotChocolate.Products": {
+      "commandName": "Project",
+  
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:64887"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "RedTeamHotChocolate.Gateway": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "launchUrl": "http://localhost:5098/graphql",
+      "applicationUrl": "http://localhost:5098"
+    }
+  }
+}
